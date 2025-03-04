@@ -25,7 +25,8 @@ class MealsDetailsScreen extends StatelessWidget {
                     SvgPicture.asset(AppImages.chevronLeft),
                     Text(
                       'Meal’s Details',
-                      style: AppTextStyle.f32w700White.copyWith(fontSize: 24),
+                      style: AppTextStyle.f32w700White(context)
+                          .copyWith(fontSize: 24),
                     ),
                     SvgPicture.asset(AppImages.heart),
                   ],
@@ -48,7 +49,7 @@ class MealsDetailsScreen extends StatelessWidget {
                   children: [
                     Text(
                       'Planet Taste',
-                      style: AppTextStyle.f20W600SubTitleColor,
+                      style: AppTextStyle.f20W600SubTitleColor(context),
                     ),
                     Container(
                       height: 28,
@@ -66,7 +67,7 @@ class MealsDetailsScreen extends StatelessWidget {
                           ),
                           Text(
                             '1',
-                            style: AppTextStyle.f20W200PrimaryColor,
+                            style: AppTextStyle.f20W200PrimaryColor(context),
                           ),
                           Icon(
                             Icons.remove,
@@ -119,8 +120,8 @@ class MealsDetailsScreen extends StatelessWidget {
                   child: Center(
                     child: Text(
                       'Pasta, shrimp, parsley, onion, cheese',
-                      style:
-                          AppTextStyle.f10SubTitleW600.copyWith(fontSize: 12),
+                      style: AppTextStyle.f10SubTitleW600(context)
+                          .copyWith(fontSize: 12),
                     ),
                   ),
                 ),
@@ -141,7 +142,8 @@ class MealsDetailsScreen extends StatelessWidget {
                 ),
                 Text(
                   'Anything else we need to know ?',
-                  style: AppTextStyle.f16w600White.copyWith(fontSize: 14),
+                  style:
+                      AppTextStyle.f16w600White(context).copyWith(fontSize: 14),
                 ),
                 SizedBox(
                   height: 12,
@@ -185,7 +187,7 @@ class MealsDetailsScreen extends StatelessWidget {
                       children: [
                         Text(
                           '\$ 40.99',
-                          style: AppTextStyle.f16w600White
+                          style: AppTextStyle.f16w600White(context)
                               .copyWith(color: Colors.black),
                         ),
                         Container(
@@ -197,7 +199,7 @@ class MealsDetailsScreen extends StatelessWidget {
                           child: Center(
                             child: Text(
                               'Add to cart',
-                              style: AppTextStyle.f16w600White
+                              style: AppTextStyle.f16w600White(context)
                                   .copyWith(color: Colors.black, fontSize: 14),
                             ),
                           ),
@@ -239,7 +241,7 @@ class InfoRow extends StatelessWidget {
         ),
         Text(
           text,
-          style: AppTextStyle.f16w600White,
+          style: AppTextStyle.f16w600White(context),
         ),
       ],
     );
@@ -268,11 +270,13 @@ class DetailsContainer extends StatelessWidget {
           children: [
             Text(
               num,
-              style: AppTextStyle.f16w200SubTitleColor.copyWith(fontSize: 14),
+              style: AppTextStyle.f16w200SubTitleColor(context)
+                  .copyWith(fontSize: 14),
             ),
             Text(
               type,
-              style: AppTextStyle.f16w200SubTitleColor.copyWith(fontSize: 14),
+              style: AppTextStyle.f16w200SubTitleColor(context)
+                  .copyWith(fontSize: 14),
             ),
           ],
         ),

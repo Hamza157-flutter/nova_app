@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:lottie/lottie.dart';
 import 'package:nova_app/core/constants/app_images.dart';
-import 'package:nova_app/core/theme/app_background.dart';
 import 'package:nova_app/core/theme/app_colors.dart';
 import 'package:nova_app/core/theme/app_text_style.dart';
 
@@ -17,7 +16,7 @@ class SearchScreen extends StatelessWidget {
           Center(
             child: Text(
               'Search',
-              style: AppTextStyle.f20w300White,
+              style: AppTextStyle.f20w300White(context),
             ),
           ),
           SizedBox(
@@ -84,12 +83,11 @@ class SearchScreen extends StatelessWidget {
             height: 16,
           ),
           SizedBox(
-            height: 46,
+            height: MediaQuery.of(context).size.height * 0.05,
             child: ListView.separated(
               scrollDirection: Axis.horizontal,
               itemBuilder: (BuildContext context, int index) {
                 return Container(
-                  height: 46,
                   decoration: BoxDecoration(
                     border: Border.all(
                       color: Colors.white,
@@ -102,7 +100,7 @@ class SearchScreen extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 8.0),
                     child: Text(
                       'Burger',
-                      style: AppTextStyle.f16w200SubTitleColor,
+                      style: AppTextStyle.f16w200SubTitleColor(context),
                     ),
                   )),
                 );
@@ -115,8 +113,7 @@ class SearchScreen extends StatelessWidget {
               itemCount: 9,
             ),
           ),
-          Lottie.asset(AppImages.astronaut),
-          SizedBox(height: 24),
+          Expanded(child: Lottie.asset(AppImages.astronaut)),
         ],
       ),
     );

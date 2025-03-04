@@ -21,7 +21,7 @@ class GeneralButton extends StatelessWidget {
         child: Center(
           child: Text(
             text,
-            style: AppTextStyle.f20W200PrimaryColor,
+            style: AppTextStyle.f20W200PrimaryColor(context),
           ),
         ),
       ),

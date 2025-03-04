@@ -19,7 +19,8 @@ class CartScreen extends StatelessWidget {
               SvgPicture.asset(AppImages.chevronLeft),
               Text(
                 'Cart',
-                style: AppTextStyle.f32w700White.copyWith(fontSize: 24),
+                style:
+                    AppTextStyle.f32w700White(context).copyWith(fontSize: 24),
               ),
               SizedBox(
                 height: 24,
@@ -60,11 +61,11 @@ class CartScreen extends StatelessWidget {
                                 children: [
                                   Text(
                                     'Planet Taste',
-                                    style: AppTextStyle.f16w600White,
+                                    style: AppTextStyle.f16w600White(context),
                                   ),
                                   Text(
                                     '\$10.00',
-                                    style: AppTextStyle.f16w600White,
+                                    style: AppTextStyle.f16w600White(context),
                                   ),
                                 ],
                               ),
@@ -102,7 +103,8 @@ class CartScreen extends StatelessWidget {
                                         ),
                                         Text(
                                           '2',
-                                          style: AppTextStyle.f16w600White,
+                                          style: AppTextStyle.f16w600White(
+                                              context),
                                         ),
                                         SvgPicture.asset(AppImages.plus),
                                       ],
@@ -139,11 +141,11 @@ class CartScreen extends StatelessWidget {
                 children: [
                   Text(
                     'Total:',
-                    style: AppTextStyle.f16w600White,
+                    style: AppTextStyle.f16w600White(context),
                   ),
                   Text(
                     '\$ 60.00',
-                    style: AppTextStyle.f16w600White,
+                    style: AppTextStyle.f16w600White(context),
                   ),
                 ],
               ),

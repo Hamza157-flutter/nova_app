@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-
 import '../theme/app_text_style.dart';
-import 'general_button.dart';
 
 class OnBoardingGeneric extends StatelessWidget {
   const OnBoardingGeneric({
@@ -27,14 +25,15 @@ class OnBoardingGeneric extends StatelessWidget {
             children: [
               Text(
                 title,
-                style: AppTextStyle.f32w700White.copyWith(fontSize: 24),
+                style:
+                    AppTextStyle.f32w700White(context).copyWith(fontSize: 24),
               ),
               SizedBox(
                 height: 16,
               ),
               Text(
                 description,
-                style: AppTextStyle.f16w200subTitleColorOpacity70,
+                style: AppTextStyle.f16w200subTitleColorOpacity70(context),
                 textAlign: TextAlign.center,
               ),
             ],

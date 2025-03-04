@@ -89,7 +89,7 @@ class TextButtonProfile extends StatelessWidget {
     return TextButton(
       onPressed: onPressed,
       child: SizedBox(
-        width: 306,
+        width: double.infinity,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -99,7 +99,7 @@ class TextButtonProfile extends StatelessWidget {
                 SizedBox(width: 12),
                 Text(
                   text ?? '',
-                  style: AppTextStyle.f16W400SubTitleColor,
+                  style: AppTextStyle.f16W400SubTitleColor(context),
                 ),
               ],
             ),

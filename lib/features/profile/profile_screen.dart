@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:nova_app/core/theme/app_background.dart';
 import '../../core/constants/app_images.dart';
 import '../../core/genericWidgets/profile_box.dart';
 import '../../core/theme/app_colors.dart';
@@ -25,11 +23,11 @@ class ProfileScreen extends StatelessWidget {
                   ),
                   Text(
                     'User',
-                    style: AppTextStyle.f32w700White,
+                    style: AppTextStyle.f32w700White(context),
                   ),
                   Text(
                     '+963582246475', //TODO: change to user number
-                    style: AppTextStyle.f20w300White
+                    style: AppTextStyle.f20w300White(context)
                         .copyWith(fontWeight: FontWeight.w400),
                   ),
                 ],
